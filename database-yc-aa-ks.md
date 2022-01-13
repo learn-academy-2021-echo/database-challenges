@@ -81,7 +81,7 @@ Which five countries have the lowest population density (density = population / 
 
 
 
-Which countries have the highest population density?(HINT: starts with Macao)
+Which countries have the highest population density?(HINT: starts with Macao)  
 
 Which is the smallest country by area? (HINT: .4)
 Which is the smallest country by population? (HINT: 50)?
