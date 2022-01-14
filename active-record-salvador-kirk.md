@@ -39,10 +39,22 @@ pp Person.where(last_name:'Tena')
 
 <!-- Update the phone number of the last entry in the database. -->
 
+newNumber = Person.last
+newNumber.update phone:'555-555-5555'
+Person.last.update phone:'666-555-5555'
+
 <!-- Retrieve the first_name of the third Person in the database. -->
+
+(Person.find 4).first_name
 
 Stretch Challenges
 
 <!-- Update all the family members with the same last_name as you, to have the same phone number as you. -->
 
+Person.where(last_name:'Tena').update(phone:'999-999-9999')
+
 <!-- Remove all family members that do not have your last_name. -->
+
+not_tena = Person.where.not(last_name:'Tena')[0]
+
+(Person.where.not(last_name:'Tena')[0]).destroy
